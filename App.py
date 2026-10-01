@@ -14,7 +14,19 @@ st.set_page_config(
     page_icon="🩺",
     layout="wide"
 )
-
+hide_footer_style = """
+    <style>
+    div[data-testid="stStatusWidget"] {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_footer_style, unsafe_allow_html=True)
+    <style>
+    div[data-testid="stStatusWidget"] {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_footer_style, unsafe_allow_html=True)
 # -------------------------------------------------------------------
 # 2. قاعدة بيانات التحاليل الشاملة مع المعدلات الطبيعية
 # -------------------------------------------------------------------
